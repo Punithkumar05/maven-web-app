@@ -1,6 +1,6 @@
 <html>
 <body>
-<h1><font color='green'> Welcome to ArtisanTek - Software Training Institute <font></h1>
+<h1><font color='red'> Welcome to ArtisanTek - Software Training Institute <font></h1>
   
   <h3> Ofc Location : vijaynagar, Banglore </h3>
   
