@@ -1,0 +1,17 @@
+node {
+    stage('Checkout') {
+        git branch: 'main', credentialsId: 'github', url: 'https://github.com/Punithkumar05/maven-web-app.git'
+    }
+
+    stage('Build') {
+        sh 'mvn clean package'
+    }
+
+    stage('Push') {
+        echo 'This is Push Stage'
+    }
+
+    stage('Deploy') {
+        sh 'sudo cp /home/ec2-user/git/maven-web-app/target/maven-web-app.war /opt/tomcat/webapps'
+    }
+}
